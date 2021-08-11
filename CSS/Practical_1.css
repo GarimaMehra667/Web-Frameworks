@@ -1,0 +1,15 @@
+#heading{
+    background-color: rgb(137, 197, 207);
+    color: rgb(97, 1, 141);
+    font-style: italic;
+}
+#one{
+    background-color: rgb(211, 235, 235);
+}
+#submit{
+    background-color: teal;
+    color: whitesmoke;
+}
+h2{
+    color: rgb(92, 81, 197);
+}
