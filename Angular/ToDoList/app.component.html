@@ -1,0 +1,31 @@
+<p>App Component running..</p>
+<label for="">Name</label><input type="text" [(ngModel)]="tName"><br>
+<label for="">Due Date</label><input type="text" [(ngModel)]="tDue"><br>
+<label for="">Details</label><input type="text" [(ngModel)]="tdts"><br>
+
+<button class="btn btn-primary" (click)="addTask(tName, tDue, tdts)">Add Task</button>
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th scope="col">TaskID</th>
+            <th scope="col">Task Name</th>
+            <th scope="col">Due Date</th>
+            <th scope="col">Satus</th>
+            <th scope="col">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of taskArr">
+            <td>{{obj.taskid}}</td>
+            <td>{{obj.tasknm}}</td>
+            <td>{{obj.duedt}}</td>
+            <td>{{obj.status}}</td>
+            <td><a href="#" (click)="showHide(obj.taskid)">Click</a>
+                 <app-details [tDetails] = "obj.details" *ngIf="obj.showhide"></app-details>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><app-details (msgEvent) ="receiveMessage($event)"></app-details></p>
+<p>{{message}}</p>
+<app-details></app-details>
