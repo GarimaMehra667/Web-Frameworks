@@ -1,0 +1,43 @@
+<label for="">Name:</label>
+<input type="text" name="" id="">
+<label for="">Age</label>
+<input type="text" name="" id="">
+<button class="btn btn-primary">Submit</button>
+<!-- <app-aboutus></app-aboutus> -->
+<label for="">{{title}}</label>
+<img src="{{imgURL}}" alt="image">
+<div (click)="divClick()">
+<button (click)="myFunction($event)">Button</button>
+</div>
+
+<input type="text" [(ngModel)]="fullName">
+<label>{{fullName}}</label>
+<br>
+<label for="">{{b[0].title}}</label>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let i of b">
+      <td>{{i.title}}</td>
+      <td>{{i.price}}</td>
+      <td>{{i.qty}}</td>
+    </tr>
+
+  </tbody>
+  <thead>  
+      <th scope="col">Total</th>
+      <th scope="col">{{TotPrice}}</th>
+      <th scope="col">{{TotQty}}</th>
+  </thead>
+</table>
+<label for="" [ngStyle]="myStyle()">India</label>
+<button (click)="increaseSize()">+</button>
+<button (click)="labelDisplay()">Display Label</button>
+<button class = "buttonClass"[ngClass]="applyClass()" (click)="AddRemoveClass()">BTN BTN-PRIMARY</button>
