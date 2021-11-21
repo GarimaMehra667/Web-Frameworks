@@ -1,0 +1,10 @@
+let myVar:string="Hello World";
+console.log(myVar);
+var myboolVar:Boolean = true;
+console.log(myboolVar);
+let mynumVar:number = 23;
+console.log(mynumVar);
+var tp : [string,number,boolean] = ["Ram",12,true];
+console.log(tp);
+let mylist:number[] = [3,4,67,32];
+console.log(mylist);
