@@ -1,0 +1,45 @@
+.header{
+    display: inline;
+    height: inherit;
+}
+header{
+    height: 100px;
+}
+body{
+    border: 1px red solid;
+}
+html{
+    border: 1px red solid;
+}
+figure{
+    width: 50px;
+}
+input[value="hide"]:checked~img{
+    display: none;
+}
+#tran{
+    border-radius: 50%;
+    border: 2px solid red;
+}
+#tran:hover{
+    /*transform: translateX(50px);
+    transition-duration: 4s;
+    transform: rotate(10deg);*/
+    transform: scale(50% ,50%);
+}
+#ani{
+    top: 40%;
+    left: 40%;
+    bottom: 0px;
+width: 100px;
+position: relative;
+animation: mymove 5s ;
+}
+
+@keyframes mymove {
+0%   {bottom: 0px; left: 43%; }
+25%  {bottom: 55%; left: 0%; }
+50%  {bottom: 90%; left: 43%; }
+75%  {bottom: 55%; left: 90%; }
+100% {top: 0px; left: 43%; }
+}

@@ -1,0 +1,79 @@
+.form1{
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+
+.btn{
+    margin-left: 860px;
+    font-size: 50px;
+
+}
+h2{ 
+    text-align: center;
+}
+.form2{
+    margin-left:50px;
+    margin-top: 20px;
+    width: 80%;
+    height: 500px;
+    border: 7px solid black;
+}
+.table{
+    padding-top: 10px;
+    height:250px;
+    border: solid;
+    width: 85%;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.details{
+    margin-left:80px;
+    font-size: 18px;
+}
+.cgpa{
+    margin-left: 100px;
+    display:inline-block;
+}
+
+.course{
+    width: 70px;
+}
+.details1{
+    margin-left:30px;
+    font-size: 18px;
+}
+.print_details{
+    text-align: center;
+    margin-top:10px ;
+    display: inline-block;
+    border: 2px solid black; 
+    width: 120px;
+    height: 20px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+
+.print_marks{
+    text-align: center;
+    margin-top:10px ;
+    display: inline-block;
+    border: 1px solid black; 
+    width: 100px;
+    height: 20px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+
+.print_cgpa{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black; 
+    width: 80px;
+    height: 20px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
